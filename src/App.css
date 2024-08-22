@@ -13,19 +13,20 @@
   }
 }
 
+/* Update the background and text color */
 .App-header {
-  background-color: #282c34;
+  background-color: #2E2E2E; /* Dark gray background */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #FF0000; /* Red text */
 }
 
 .App-link {
-  color: #61dafb;
+  color: #FF0000; /* Change link color to red */
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +36,38 @@
   to {
     transform: rotate(360deg);
   }
+}
+.photo-container {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  height: 400px; 
+  overflow: hidden; 
+}
+
+.photo {
+  width: auto;
+  height: 100%;
+  display: block;
+  margin: 0 auto; 
+  object-fit: cover; 
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.nav-button.left {
+  left: 0;
+}
+
+.nav-button.right {
+  right: 0;
 }
